@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário Interativo</title>
+  <!-- Conecta com o arquivo de estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="quiz-card">
+    <!-- Tela do Questionário -->
+    <div id="quiz-screen">
+      <div class="progress" id="progress">Pergunta 1 de 5</div>
+      <div class="question-text" id="question-text">Carregando pergunta...</div>
+      <div class="options-container" id="options-container">
+        <!-- As opções de resposta vão aparecer aqui dinamicamente -->
+      </div>
+    </div>
+
+    <!-- Tela de Conclusão/Resultado -->
+    <div id="result-screen" class="hidden">
+      <h1>Conclusão do Questionário</h1>
+      <p>Confira o resumo das suas respostas abaixo:</p>
+      <ul class="result-list" id="result-list"></ul>
+      <button class="restart-btn" id="restart-btn">Refazer Questionário</button>
+    </div>
+  </div>
+
+  <!-- Conecta com o arquivo de lógica JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
